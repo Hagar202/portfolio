@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" data-design="plum">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hagar Soliman · AI Engineer</title>
+<meta name="description" content="Hagar Soliman is an AI engineer in Cairo building computer vision, NLP and generative AI systems, from model training to deployment. Certified by NVIDIA, Huawei and IBM.">
+<meta name="author" content="Hagar Soliman">
+<link rel="canonical" href="https://hagar202.github.io/portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hagar Soliman · AI Engineer">
+<meta property="og:description" content="Computer vision, NLP and generative AI systems, from model training to deployment.">
+<meta property="og:url" content="https://hagar202.github.io/portfolio/">
+<meta property="og:image" content="https://hagar202.github.io/portfolio/img/eyespeak-1.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FAF8FC">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%236A2C8C'/><circle cx='32' cy='32' r='13' fill='none' stroke='white' stroke-width='5'/><circle cx='32' cy='32' r='4' fill='white'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Hagar Soliman","jobTitle":"AI Engineer","url":"https://hagar202.github.io/portfolio/","email":"mailto:hagarsoliman745@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"},"alumniOf":"Helwan International Technological University","sameAs":["https://github.com/Hagar202","https://linkedin.com/in/hagar-soliman-0a6b41264","https://www.upwork.com/freelancers/~01628ce158fc255d37"]}
+</script>
+<style>
+:root{
+  --bg:#F6F7FB; --surface:#FFFFFF; --sunk:#ECEEF5;
+  --ink:#151A33; --muted:#5A6180; --line:#DFE2EC;
+  --accent:#4338CA; --accent-ink:#FFFFFF; --accent-soft:#E6E4FB;
+  --gold:#B7791F; --ok:#15803D;
+  --contact-bg:#151A33; --contact-ink:#F6F7FB;
+  --display:'Bricolage Grotesque',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --body:'IBM Plex Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --r-sm:8px; --r-md:14px; --r-lg:22px;
+  --shadow:0 1px 2px rgba(21,26,51,.05),0 8px 24px -12px rgba(21,26,51,.18);
+  --wrap:1120px;
+  color-scheme:light;
+}
+/* ===== Design 3: Plum and gold (elegant, editorial) ===== */
+:root[data-design="plum"]{
+  --bg:#FAF8FC; --surface:#FFFFFF; --sunk:#F1ECF5;
+  --ink:#24122F; --muted:#6B5A77; --line:#E6DEEC;
+  --accent:#6A2C8C; --accent-ink:#FFFFFF; --accent-soft:#F0E5F6;
+  --gold:#B8862B; --ok:#2F7D5B;
+  --contact-bg:#24122F; --contact-ink:#FAF8FC;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --r-sm:4px; --r-md:6px; --r-lg:10px;
+  color-scheme:light;
+}
+:root[data-design="plum"] h1,:root[data-design="plum"] h2{font-weight:600;letter-spacing:-.025em}
+:root[data-design="plum"] .result b{color:var(--gold)}
+:root[data-design="plum"] .contact .result-mini,:root[data-design="plum"] .proof ul{font-weight:600}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(1.25rem,4vw,2rem)}
+h1,h2,h3{font-family:var(--display);line-height:1.1;letter-spacing:-.02em;font-weight:700}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--accent-ink);padding:.6rem 1rem;z-index:100;border-radius:0 0 8px 0}
+.skip:focus{left:0}
+
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
+.nav.scrolled{border-bottom-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:1.25rem;height:68px;position:relative}
+.brand{font-family:var(--display);font-weight:700;font-size:1.15rem;text-decoration:none;display:flex;align-items:center;gap:.55rem;margin-right:auto}
+.brand-mark{width:28px;height:28px;border-radius:8px;background:var(--accent);display:grid;place-items:center}
+.brand-mark::before{content:"";width:13px;height:13px;border-radius:50%;border:2.5px solid var(--accent-ink);background:radial-gradient(circle,var(--accent-ink) 0 2.5px,transparent 3px)}
+.nav-links{display:flex;gap:1.6rem;list-style:none}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
+.nav-links a:hover,.nav-links a.active{color:var(--ink)}
+.icon-btn{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);display:grid;place-items:center;cursor:pointer;flex:none}
+.icon-btn svg{width:18px;height:18px}
+.menu-btn{display:none}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.3rem;border-radius:12px;font:600 .975rem/1 var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.btn svg{width:18px;height:18px}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:var(--accent-ink)}
+.btn-primary:hover{background:color-mix(in srgb,var(--accent) 86%,var(--ink))}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--muted)}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(3rem,8vw,6rem) 0 clamp(3rem,6vw,4.5rem)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.status{display:inline-flex;align-items:center;gap:.6rem;font-size:.92rem;color:var(--muted);margin-bottom:1.4rem}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 20%,transparent);flex:none}
+.hero h1{font-size:clamp(2.8rem,7vw,5.2rem);font-weight:800;letter-spacing:-.035em;line-height:.98}
+.hero .role{font-family:var(--display);font-size:clamp(1.25rem,2.4vw,1.6rem);font-weight:500;color:var(--muted);margin:.9rem 0 1.4rem;letter-spacing:-.01em}
+.hero .pitch{max-width:34em;font-size:1.1rem}
+.hero .actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:2rem 0 1.8rem}
+.socials{display:flex;gap:.5rem}
+.socials a{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);background:var(--surface);transition:color .15s,border-color .15s}
+.socials a:hover{color:var(--accent);border-color:var(--accent)}
+.socials svg{width:19px;height:19px}
+
+/* calibration frame around the portrait, a nod to EyeSpeak */
+.portrait{position:relative;justify-self:center;width:min(100%,380px);aspect-ratio:4/5}
+.portrait img{width:100%;height:100%;object-fit:contain;object-position:center bottom;border-radius:var(--r-lg);background:radial-gradient(120% 80% at 50% 100%,color-mix(in srgb,var(--accent) 34%,var(--surface)) 0%,var(--accent-soft) 55%,var(--surface) 100%);border:1px solid var(--line)}
+.cal{position:absolute;width:16px;height:16px;border-radius:50%;border:2px solid var(--accent);background:var(--bg);transform:translate(-50%,-50%);opacity:.3;transition:opacity .3s}
+.cal::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--accent);transform:scale(0);transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.cal.on{opacity:1}
+.cal.on::after{transform:scale(1)}
+.cal.c1{left:0;top:0}.cal.c2{left:100%;top:0}.cal.c3{left:100%;top:50%}.cal.c4{left:100%;top:100%}.cal.c5{left:0;top:100%}.cal.c6{left:0;top:50%}
+.cal-label{position:absolute;left:0;right:0;top:calc(100% + 18px);font-size:.85rem;color:var(--muted);display:flex;gap:.4rem;align-items:center;justify-content:center;opacity:0;transition:opacity .5s}
+.cal-label.on{opacity:1}
+.cal-label svg{width:14px;height:14px;color:var(--ok)}
+
+/* proof strip */
+.proof{border-block:1px solid var(--line);background:var(--surface)}
+.proof .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.8rem 2.2rem;padding-block:1.25rem}
+.proof p{color:var(--muted);font-size:.92rem}
+.proof ul{display:flex;flex-wrap:wrap;gap:.5rem 2rem;list-style:none;font-family:var(--display);font-weight:600;font-size:1.08rem}
+.proof .stars{margin-left:auto;font-size:.92rem;color:var(--muted);display:flex;align-items:center;gap:.5rem}
+.proof .stars b{color:var(--gold);letter-spacing:1px;font-size:1rem}
+
+/* ---------- sections ---------- */
+.block{padding:clamp(3.5rem,8vw,6rem) 0}
+.block + .block{padding-top:0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:1rem 2rem;margin-bottom:2.25rem;flex-wrap:wrap}
+.head h2,.split h2{font-size:clamp(2rem,4.2vw,2.9rem)}
+.head p{color:var(--muted);max-width:30em}
+
+/* projects */
+.feature{display:grid;grid-template-columns:1.1fr 1fr;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;margin-bottom:1.5rem}
+.feature .media{background:#fff;min-height:360px;cursor:zoom-in;display:grid;place-items:center}
+.feature .media img{width:100%;height:100%;max-height:520px;object-fit:contain;padding:clamp(1rem,3vw,2rem)}
+.feature .body{padding:clamp(1.6rem,3.5vw,2.75rem);display:flex;flex-direction:column;gap:1rem}
+.feature h3{font-size:clamp(1.8rem,3vw,2.3rem)}
+.tag{align-self:flex-start;font-size:.82rem;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:.3rem .75rem;border-radius:999px}
+.feature ul{padding-left:1.1rem;color:var(--muted)}
+.feature ul li+li{margin-top:.3rem}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;display:flex;flex-direction:column}
+.card .media{aspect-ratio:16/9;background:var(--sunk);overflow:hidden;cursor:zoom-in}
+.card .media img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .media img{transform:scale(1.03)}
+.card .body{padding:1.4rem 1.5rem 1.6rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.card h3{font-size:1.35rem}
+.meta{font-size:.88rem;color:var(--muted)}
+.desc{color:var(--muted)}
+.stack{display:flex;flex-wrap:wrap;gap:.4rem;padding-top:.3rem}
+.card .stack{margin-top:auto}
+.stack span{font-size:.8rem;padding:.25rem .6rem;border-radius:6px;background:var(--sunk)}
+.links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.35rem}
+.more{background:none;border:0;padding:0;color:var(--accent);font:600 .95rem var(--body);cursor:pointer;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.more:hover{text-decoration-thickness:2px}
+
+.result{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap}
+.result b{font-family:var(--display);font-size:2.6rem;line-height:1;font-weight:700;color:var(--accent);letter-spacing:-.03em}
+.result span{color:var(--muted);font-size:.92rem}
+.feature .result b{font-size:clamp(3rem,6vw,4.2rem)}
+.card .result{padding:.15rem 0 .2rem}
+.code-link{display:inline-flex;align-items:center;gap:.35rem;font-weight:600;font-size:.95rem;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.code-link:hover{border-color:var(--ink)}
+.code-link svg{width:16px;height:16px}
+.links{align-items:center;gap:1.2rem}
+
+/* experience */
+.exp{list-style:none;border-top:1px solid var(--line)}
+.exp > li{display:grid;grid-template-columns:190px 1fr;gap:2rem;padding:1.8rem 0;border-bottom:1px solid var(--line)}
+.exp time{color:var(--muted);font-size:.95rem;padding-top:.25rem}
+.exp h3{font-size:1.3rem}
+.exp .org{color:var(--muted);margin:.15rem 0 .7rem}
+.exp ul{padding-left:1.1rem}
+.exp ul li+li{margin-top:.25rem}
+.exp a{color:var(--accent)}
+
+/* skills + education */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,5vw,4.5rem)}
+.split h2{margin-bottom:2rem}
+.skills dl{display:grid;gap:1.3rem}
+.skills dt{font-weight:600;margin-bottom:.45rem}
+.skills dd{display:flex;flex-wrap:wrap;gap:.4rem}
+.skills dd span{font-size:.88rem;padding:.3rem .7rem;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+.edu{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:1.8rem}
+.edu h3{font-size:1.4rem;margin-bottom:.3rem}
+.edu .grade{display:inline-block;margin:.9rem 0 1rem;font-weight:600;color:var(--ok);background:color-mix(in srgb,var(--ok) 13%,transparent);padding:.3rem .75rem;border-radius:999px;font-size:.88rem}
+.edu p+p{margin-top:.6rem}
+.small{color:var(--muted);font-size:.95rem}
+.small b{color:var(--ink)}
+.offer-title{font-size:1.4rem;margin:2.5rem 0 1.1rem}
+.offer{display:grid;gap:1.1rem}
+.offer h3{font-size:1.15rem;margin-bottom:.2rem}
+.offer > div{border-left:3px solid var(--accent);padding:.15rem 0 .15rem 1rem}
+.offer span{color:var(--muted);font-size:.95rem}
+
+/* credentials */
+.certs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.cert{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden;text-align:left;font:inherit;color:inherit;display:flex;flex-direction:column;padding:0;width:100%}
+button.cert{cursor:pointer;transition:border-color .15s,transform .15s}
+button.cert:hover{border-color:var(--accent);transform:translateY(-2px)}
+.cert .thumb{position:relative;aspect-ratio:3/2;background:#fff;border-bottom:1px solid var(--line);flex:none}
+.cert .thumb img{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);object-fit:contain}
+.cert .info{padding:1rem 1.15rem 1.2rem;display:flex;flex-direction:column;gap:.2rem}
+.cert .issuer{font-size:.85rem;font-weight:600;color:var(--accent)}
+.cert .title{font-weight:600;line-height:1.35}
+.cert .when{font-size:.84rem;color:var(--muted)}
+.cert.noimg .thumb{display:grid;place-items:center;background:var(--sunk);color:var(--muted);font-size:.88rem}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.review{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:1.7rem;display:flex;flex-direction:column;gap:1rem}
+.review .stars{color:var(--gold);letter-spacing:2px}
+.review blockquote{font-family:var(--display);font-size:1.2rem;font-weight:500;line-height:1.4;letter-spacing:-.01em}
+.review figcaption{margin-top:auto;font-size:.92rem}
+.review figcaption b{display:block}
+.review figcaption span{color:var(--muted)}
+
+/* contact */
+.contact{background:var(--contact-bg);color:var(--contact-ink);border-radius:var(--r-lg);padding:clamp(2.2rem,6vw,4.5rem);display:grid;grid-template-columns:1.2fr 1fr;gap:2.5rem;align-items:end}
+.contact h2{font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.03em}
+.contact p{opacity:.78;margin-top:1rem;max-width:28em}
+.contact .mail{display:inline-block;margin-top:1.6rem;font-family:var(--display);font-size:clamp(1.1rem,2.6vw,1.6rem);font-weight:600;text-decoration-thickness:1px;text-underline-offset:6px;overflow-wrap:anywhere}
+.contact ul{list-style:none}
+.contact ul a{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.9rem 0;border-bottom:1px solid color-mix(in srgb,var(--contact-ink) 20%,transparent);text-decoration:none;font-weight:500}
+.contact ul a:hover{opacity:.75}
+.contact ul a span{opacity:.65;font-size:.9rem}
+.contact :focus-visible{outline-color:var(--contact-ink)}
+footer.site{padding:2.5rem 0 calc(3rem + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:.9rem}
+footer.site .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+/* ---------- gallery dialog ---------- */
+dialog.gal{border:0;padding:0;background:var(--surface);color:var(--ink);border-radius:var(--r-lg);width:min(980px,calc(100vw - 2rem));max-height:calc(100dvh - 2rem);overflow:auto;margin:auto;box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
+dialog.gal::backdrop{background:rgba(10,12,25,.72);backdrop-filter:blur(4px)}
+.gal-top{display:flex;justify-content:space-between;align-items:start;gap:1rem;padding:1.4rem 1.6rem 1rem}
+.gal-top h3{font-size:1.5rem}
+.gal-stage{position:relative;background:var(--sunk);aspect-ratio:16/10}
+.gal-stage img{width:100%;height:100%;object-fit:contain}
+.gal-nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);box-shadow:var(--shadow);cursor:pointer;display:grid;place-items:center}
+.gal-nav[hidden]{display:none}
+.gal-nav svg{width:20px;height:20px}
+.gal-nav.prev{left:12px}.gal-nav.next{right:12px}
+.gal-nav:disabled{opacity:.35;cursor:default}
+.gal-count{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);background:var(--surface);font-size:.82rem;padding:.25rem .7rem;border-radius:999px;box-shadow:var(--shadow)}
+.gal-body{padding:1.4rem 1.6rem 1.8rem;color:var(--muted);white-space:pre-line}
+
+/* ---------- one quiet entrance ---------- */
+.js .rise{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
+.js .rise.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .certs{grid-template-columns:repeat(2,1fr)}
+  .reviews{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  .nav-links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:.5rem clamp(1.25rem,4vw,2rem) 1rem}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:.75rem 0;font-size:1.05rem}
+  .menu-btn{display:grid}
+  .hero .wrap{grid-template-columns:1fr}
+  .portrait{order:-1;width:min(62%,250px);justify-self:start;margin:0 0 .5rem 8px}
+  .cal-label{display:none}
+  .feature{grid-template-columns:1fr}
+  .feature .media{min-height:0;aspect-ratio:16/10}
+  .grid2{grid-template-columns:1fr}
+  .exp > li{grid-template-columns:1fr;gap:.4rem}
+  .contact{grid-template-columns:1fr}
+  .proof .stars{margin-left:0}
+}
+@media (max-width:520px){
+  .certs{grid-template-columns:1fr}
+  .hero .actions .btn{flex:1 1 auto;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  html{scroll-behavior:auto}
+  .js .rise{opacity:1;transform:none}
+}
+
+/* ---------- print / save as PDF ---------- */
+@media print{
+  :root,:root[data-design]{--bg:#fff;--surface:#fff;--sunk:#f3f4f8;--ink:#111;--muted:#444;--line:#ddd;--accent:#3730A3;--accent-ink:#fff;--contact-bg:#fff;--contact-ink:#111;color-scheme:light}
+  .nav,.socials,.hero .actions,.cal,.cal-label,.more,.code-link,dialog,footer.site,.status{display:none!important}
+  body{font-size:10.5pt}
+  .block{padding:1rem 0}
+  .hero{padding:0 0 1rem}
+  .hero .wrap{grid-template-columns:1fr 150px}
+  .portrait{width:150px;order:0}
+  .js .rise{opacity:1!important;transform:none!important}
+  .card,.feature,.cert,.review,.exp > li,.edu{break-inside:avoid;box-shadow:none}
+  .card .media,.feature .media{display:none}
+  .feature{grid-template-columns:1fr}
+  .certs{grid-template-columns:repeat(3,1fr)}
+  .cert .thumb{display:none}
+  .contact{border:1px solid #ddd}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Hagar Soliman, back to top"><span class="brand-mark" aria-hidden="true"></span>Hagar Soliman</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="status"><i aria-hidden="true"></i>Open to AI engineering roles and freelance projects</p>
+      <h1>Hagar Soliman</h1>
+      <p class="role">AI Engineer, computer vision, NLP and LLM apps</p>
+      <p class="pitch">I build AI that ships. Eye-tracking glasses that let patients type with their gaze at 87% accuracy, an Arabic and English review analyzer at 92% accuracy, and an OpenAI chatbot running live inside a client's CRM. I graduated 8th in my class in Artificial Intelligence.</p>
+      <div class="actions">
+        <a href="#work" class="btn btn-primary">See my projects</a>
+        <a href="mailto:hagarsoliman745@gmail.com" class="btn btn-ghost">Email me</a>
+        <a href="Hagar-Soliman-CV.pdf" class="btn btn-ghost" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5M12 15V3"/></svg>Download CV
+        </a>
+      </div>
+      <nav class="socials" aria-label="Profiles">
+        <a href="https://github.com/Hagar202" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a>
+        <a href="https://linkedin.com/in/hagar-soliman-0a6b41264" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://www.upwork.com/freelancers/~01628ce158fc255d37" target="_blank" rel="noopener" aria-label="Upwork"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.56 13.16c-1.1 0-2.13-.47-3.07-1.23l.23-1.08v-.04c.21-1.14.85-3.06 2.84-3.06a2.7 2.7 0 0 1 0 5.41zm0-7.02c-2.54 0-4.51 1.65-5.31 4.37-1.22-1.84-2.15-4.04-2.69-5.9H7.83v7.12a2.55 2.55 0 0 1-5.1 0V4.61H0v7.12a5.28 5.28 0 0 0 10.56 0v-1.19c.53 1.1 1.18 2.23 1.98 3.22l-1.68 7.88h2.8l1.21-5.71c1.14.73 2.44 1.19 3.69 1.19a5.03 5.03 0 0 0 0-10.06z"/></svg></a>
+        <a href="https://wa.me/201551020896" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1 15.36-12.2 9.8 9.8 0 0 1 2.89 6.98 9.88 9.88 0 0 1-9.87 9.85zm8.41-18.3A11.82 11.82 0 0 0 .16 17.74L0 24l6.39-1.68a11.88 11.88 0 0 0 5.67 1.45h.01A11.85 11.85 0 0 0 23.94 11.9a11.8 11.8 0 0 0-3.48-8.41z"/></svg></a>
+      </nav>
+    </div>
+
+    <figure class="portrait">
+      <img src="img/hagar.webp" alt="Hagar Soliman, smiling with arms crossed" width="796" height="995" fetchpriority="high">
+      <span class="cal c1" aria-hidden="true"></span><span class="cal c2" aria-hidden="true"></span><span class="cal c3" aria-hidden="true"></span>
+      <span class="cal c4" aria-hidden="true"></span><span class="cal c5" aria-hidden="true"></span><span class="cal c6" aria-hidden="true"></span>
+      <figcaption class="cal-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Gaze calibrated, the EyeSpeak way</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="proof">
+  <div class="wrap">
+    <p>Certified by</p>
+    <ul aria-label="Certifying organisations">
+      <li>NVIDIA</li><li>Huawei</li><li>IBM</li><li>NTI</li><li>ITI</li>
+    </ul>
+    <span class="stars"><b aria-hidden="true">★★★★★</b>5.0 client rating, ranked 8th in class</span>
+  </div>
+</div>
+
+<!-- Work -->
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="head rise">
+      <h2>Projects</h2>
+      <p>Measured results from computer vision, NLP and assistive tech. Open any project for screenshots and details.</p>
+    </div>
+
+    <article class="feature rise">
+      <div class="media" data-open="eyespeak"><img src="img/eyespeak-1-sm.webp" alt="EyeSpeak glasses: a Raspberry Pi and camera module mounted on a head frame" loading="lazy" width="720" height="530"></div>
+      <div class="body">
+        <span class="tag">Graduation project</span>
+        <h3>EyeSpeak</h3>
+        <div class="result"><b>87%</b><span>eye-tracking accuracy</span></div>
+        <p class="desc">Eye-tracking glasses that let people with limited mobility control an Android phone and type using only their gaze. A Raspberry Pi camera tracks the eye, a Random Forest model maps gaze to the screen after a short calibration, and the phone receives input over Bluetooth.</p>
+        <ul>
+          <li>Real-time gaze tracking with per-user calibration</li>
+          <li>Virtual keyboard driven entirely by eye movement</li>
+          <li>Android app in Kotlin, built for accessibility first</li>
+        </ul>
+        <div class="stack"><span>Python</span><span>OpenCV</span><span>Random Forest</span><span>Raspberry Pi Zero 2 W</span><span>Kotlin</span><span>Bluetooth</span></div>
+        <div class="links"><button type="button" class="more" data-project="eyespeak">Screenshots and details</button><a class="code-link" href="https://github.com/Hagar202/EyeSpeak" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>Code</a></div>
+      </div>
+    </article>
+
+    <div class="grid2">
+      <article class="card rise">
+        <div class="media" data-open="reviews"><img src="img/reviews-1-sm.webp" alt="Amazon Intelligence Suite dashboard built with Streamlit" loading="lazy" width="720" height="405"></div>
+        <div class="body">
+          <h3>Smart Product Review Analyzer</h3>
+          <p class="meta">NTI training project, 2025</p>
+          <div class="result"><b>92%</b><span>accuracy, 0.89 F1-score</span></div>
+          <p class="desc">Scrapes Amazon reviews, classifies sentiment in Arabic and English with Transformer models, and ranks products in a Streamlit dashboard.</p>
+          <div class="stack"><span>PyTorch</span><span>Hugging Face</span><span>BeautifulSoup</span><span>Streamlit</span></div>
+          <div class="links"><button type="button" class="more" data-project="reviews">Details</button><a class="code-link" href="https://github.com/Hagar202/Smart-Product-Review-Analyzer" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>Code</a></div>
+        </div>
+      </article>
+      <article class="card rise">
+        <div class="media" data-open="sign-glove"><img src="img/glove-1-sm.webp" alt="Sensor glove with flex sensors and wiring" loading="lazy" width="540" height="720" style="object-position:center 45%"></div>
+        <div class="body">
+          <h3>Sign Language Translator Glove</h3>
+          <p class="meta">Academic team project, 2023 – 2024</p>
+          <div class="result"><b>87%</b><span>gesture recognition accuracy</span></div>
+          <p class="desc">A wearable glove that turns sign-language gestures into Arabic text and speech. ESP32 sensor readings feed a Random Forest classifier, and a Flutter app speaks the result.</p>
+          <div class="stack"><span>Random Forest</span><span>ESP32</span><span>Flutter</span><span>Python</span></div>
+          <div class="links"><button type="button" class="more" data-project="sign-glove">Details</button></div>
+        </div>
+      </article>
+      <article class="card rise">
+        <div class="media" data-open="vision-walk"><img src="img/visionwalk-1-sm.webp" alt="VisionWalk AI web app for real-time person detection" loading="lazy" width="720" height="332"></div>
+        <div class="body">
+          <h3>VisionWalk</h3>
+          <p class="meta">Shabab Mobtakeron training project, 2025</p>
+          <div class="result"><b>~80%</b><span>detection accuracy, real time</span></div>
+          <p class="desc">Pedestrian detection and tracking for road scenes. Runs YOLO on images, video files and live streams, optimised for real-time performance.</p>
+          <div class="stack"><span>YOLOv8</span><span>OpenCV</span><span>Python</span></div>
+          <div class="links"><button type="button" class="more" data-project="vision-walk">Details</button></div>
+        </div>
+      </article>
+      <article class="card rise">
+        <div class="media" data-open="egguide"><img src="img/egguide-2-sm.webp" alt="EgGuide tour page for Rashid Castle with booking options" loading="lazy" width="720" height="374"></div>
+        <div class="body">
+          <h3>EgGuide</h3>
+          <p class="meta">University team project, web</p>
+          <p class="desc">A tourism site for Egypt's heritage sites with 360° virtual tours, attraction maps and online booking.</p>
+          <div class="stack"><span>JavaScript</span><span>Matterport</span><span>HTML / CSS</span></div>
+          <div class="links"><button type="button" class="more" data-project="egguide">Details</button></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="block" id="experience">
+  <div class="wrap">
+    <div class="head rise"><h2>Experience</h2></div>
+    <ol class="exp rise">
+      <li>
+        <time>Jul 2026 – now</time>
+        <div>
+          <h3>AI Integration Engineer, Perfex CRM</h3>
+          <p class="org">Freelance client, remote</p>
+          <ul>
+            <li>Integrated an OpenAI-powered chatbot into the CRM to answer customers automatically</li>
+            <li>Built human handoff: staff routing, permissions and live support when the AI needs a person</li>
+            <li>Set up Pusher, SMTP and CRM workflows for real-time messaging, notifications and email</li>
+            <li>Configured WebRTC voice and video calls with a TURN server so calls work across networks</li>
+          </ul>
+          <div class="stack" style="margin-top:.8rem"><span>OpenAI API</span><span>PHP</span><span>Pusher</span><span>WebRTC</span></div>
+        </div>
+      </li>
+      <li>
+        <time>Apr – May 2026</time>
+        <div>
+          <h3>Freelance AI Engineer</h3>
+          <p class="org">Upwork, remote</p>
+          <ul>
+            <li>Built sentiment analysis models for customer reviews</li>
+            <li>Handled NLP preprocessing, then trained and evaluated RNN and BiLSTM models</li>
+            <li>Delivered with a 5.0 / 5.0 client rating</li>
+          </ul>
+          <div class="stack" style="margin-top:.8rem"><span>TensorFlow / Keras</span><span>BiLSTM</span><span>NLP</span></div>
+        </div>
+      </li>
+      <li>
+        <time>Jan – Feb 2026</time>
+        <div>
+          <h3>CRM Developer, Perfex CRM</h3>
+          <p class="org">Freelance client, remote</p>
+          <ul>
+            <li>Built role-based access control and lead-visibility rules</li>
+            <li>Customised modules, invoices, quotations, PDF reports and email templates</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <time>May 2025</time>
+        <div>
+          <h3>Full-Stack Web Developer</h3>
+          <p class="org">Al-Amana Capital, freelance project</p>
+          <ul>
+            <li>Built and deployed a responsive site with a backend and database</li>
+            <li>Live at <a href="https://alamanh-capital.com/" target="_blank" rel="noopener">alamanh-capital.com</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <time>Aug – Dec 2024</time>
+        <div>
+          <h3>AI Data Labeler</h3>
+          <p class="org">Micro Engineering Egypt (MEEG)</p>
+          <ul>
+            <li>Annotated 3,000+ road-scene images for autonomous-driving object detection</li>
+            <li>Drew bounding boxes for vehicles, pedestrians, signs and road objects, with quality checks</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Skills + education -->
+<section class="block" id="skills">
+  <div class="wrap split">
+    <div class="skills rise">
+      <h2>Skills</h2>
+      <dl>
+        <div><dt>AI and machine learning</dt><dd><span>Deep learning</span><span>Computer vision</span><span>NLP</span><span>Object detection</span><span>Eye tracking</span></dd></div>
+        <div><dt>Generative AI</dt><dd><span>LLMs</span><span>RAG</span><span>Embeddings</span><span>Vector databases</span><span>Prompt engineering</span><span>OpenAI API</span></dd></div>
+        <div><dt>Frameworks</dt><dd><span>PyTorch</span><span>TensorFlow / Keras</span><span>scikit-learn</span><span>OpenCV</span><span>Hugging Face</span><span>YOLOv8</span></dd></div>
+        <div><dt>Serving and apps</dt><dd><span>FastAPI</span><span>Flask</span><span>REST APIs</span><span>Streamlit</span><span>Docker</span></dd></div>
+        <div><dt>Languages and data</dt><dd><span>Python</span><span>SQL / MySQL</span><span>JavaScript</span><span>PHP</span><span>Kotlin</span><span>HTML / CSS</span></dd></div>
+        <div><dt>Tools</dt><dd><span>Git and GitHub</span><span>Jupyter</span><span>Google Colab</span><span>Claude Code</span><span>VS Code</span></dd></div>
+        <div><dt>Spoken languages</dt><dd><span>Arabic, native</span><span>English, professional</span></dd></div>
+      </dl>
+    </div>
+    <div class="rise">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>BSc in Artificial Intelligence</h3>
+        <p class="small">Helwan International Technological University, Cairo<br>Oct 2022 – Jul 2026</p>
+        <span class="grade">90.4%, Excellent, ranked 8th in class</span>
+        <p class="small"><b>Coursework:</b> machine learning, deep learning, computer vision, NLP, data mining, data structures and algorithms, databases, software engineering.</p>
+        <p class="small"><b>Graduation project:</b> EyeSpeak, an AI eye-tracking communication system.</p>
+      </div>
+      <h3 class="offer-title">How I can help</h3>
+      <div class="offer">
+        <div><h3>AI and ML development</h3><span>Custom models, from data cleaning and training to an API you can call.</span></div>
+        <div><h3>LLM integration</h3><span>Chatbots and assistants wired into your existing system, with a human handoff when needed.</span></div>
+        <div><h3>Computer vision and NLP</h3><span>Detection, tracking, classification, and sentiment analysis in Arabic and English.</span></div>
+        <div><h3>CRM and web development</h3><span>Perfex CRM customisation, access control, reports, and websites.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificates -->
+<section class="block" id="certificates">
+  <div class="wrap">
+    <div class="head rise">
+      <h2>Certificates</h2>
+      <p>Select a certificate to view it full size.</p>
+    </div>
+    <div class="certs rise" id="certs"></div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="block" id="reviews">
+  <div class="wrap">
+    <div class="head rise"><h2>What clients say</h2></div>
+    <div class="reviews">
+      <figure class="review rise">
+        <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“Excellent work. I highly recommend working with her.”</blockquote>
+        <figcaption><b>Finiex S.</b><span>Perfex CRM development, via Mostaql</span></figcaption>
+      </figure>
+      <figure class="review rise">
+        <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“Thanks for the great work and excellent communication. Hoping to collaborate on more projects together.”</blockquote>
+        <figcaption><b>Abdelkader Cherouag</b><span>Appointment booking bot</span></figcaption>
+      </figure>
+      <figure class="review rise">
+        <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“Outstanding logo and billboard design.”</blockquote>
+        <figcaption><b>Faisal Abukawjar</b><span>Logo and billboard design</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="block" id="contact">
+  <div class="wrap">
+    <div class="contact rise">
+      <div>
+        <h2>Let's build something useful.</h2>
+        <p>I'm looking for AI engineering roles and freelance work in computer vision, NLP and generative AI. I usually reply within a day.</p>
+        <a class="mail" href="mailto:hagarsoliman745@gmail.com">hagarsoliman745@gmail.com</a>
+      </div>
+      <ul>
+        <li><a href="https://linkedin.com/in/hagar-soliman-0a6b41264" target="_blank" rel="noopener">LinkedIn <span>Connect</span></a></li>
+        <li><a href="https://github.com/Hagar202" target="_blank" rel="noopener">GitHub <span>Hagar202</span></a></li>
+        <li><a href="https://www.upwork.com/freelancers/~01628ce158fc255d37" target="_blank" rel="noopener">Upwork <span>Hire me</span></a></li>
+        <li><a href="https://wa.me/201551020896" target="_blank" rel="noopener">WhatsApp <span>+20 155 102 0896</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site"><div class="wrap"><span>© 2026 Hagar Soliman</span><span>Cairo, Egypt</span></div></footer>
+
+<!-- Gallery -->
+<dialog class="gal" id="gal" aria-labelledby="gal-title">
+  <div class="gal-top">
+    <div><h3 id="gal-title"></h3><p class="meta" id="gal-sub"></p></div>
+    <button type="button" class="icon-btn" id="gal-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  </div>
+  <div class="gal-stage">
+    <img id="gal-img" alt="">
+    <button type="button" class="gal-nav prev" id="gal-prev" aria-label="Previous image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button type="button" class="gal-nav next" id="gal-next" aria-label="Next image"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg></button>
+    <span class="gal-count" id="gal-count"></span>
+  </div>
+  <div class="gal-body" id="gal-body"></div>
+</dialog>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* ============ EDIT YOUR CONTENT HERE ============
+   Add a GitHub link with `code:` and a live demo with `demo:`.
+   They only show up once you fill them in.               */
+const projects = {
+  'eyespeak': {
+    title:'EyeSpeak', sub:'Graduation project, team project. 87% eye-tracking accuracy',
+    body:'Eye-tracking glasses that help people with disabilities control an Android phone using only their eye movements.\n\n• Real-time gaze tracking with per-user calibration\n• Random Forest model maps eye position to screen position\n• Virtual keyboard controlled by gaze\n• Raspberry Pi Zero 2 W camera, Kotlin Android app, Bluetooth link',
+    imgs:['eyespeak-1','eyespeak-2','eyespeak-3','eyespeak-4'], code:'https://github.com/Hagar202/EyeSpeak', demo:''
+  },
+  'vision-walk': {
+    title:'VisionWalk', sub:'Shabab Mobtakeron training project. ~80% detection accuracy',
+    body:'A pedestrian detection system for smart-city applications. YOLOv8 processes images, video files and live streams to detect and track people in real time.\n\n• Real-time detection and tracking\n• YOLOv8 for accuracy at speed\n• Tuned for busy urban scenes',
+    imgs:['visionwalk-1','visionwalk-2','visionwalk-3','visionwalk-4'], code:'', demo:''
+  },
+  'reviews': {
+    title:'Smart Product Review Analyzer', sub:'NTI training project. 92% accuracy, 0.89 F1-score',
+    body:'Analyses Amazon product reviews in Arabic and English using Transformer-based NLP models.\n\n• Scrapes product reviews automatically\n• Classifies sentiment as positive or negative in both languages\n• PyTorch and Hugging Face Transformer models\n• Product ranking from review sentiment\n• Streamlit dashboard for top reviews and best-selling products',
+    imgs:['reviews-1','reviews-2','reviews-3'], code:'https://github.com/Hagar202/Smart-Product-Review-Analyzer', demo:''
+  },
+  'sign-glove': {
+    title:'Sign Language Translator Glove', sub:'Academic team project. 87% gesture recognition accuracy',
+    body:'A wearable system that translates sign-language gestures into Arabic text and speech in real time.\n\n• Random Forest gesture-recognition model\n• ESP32 sensor hardware for real-time readings\n• Companion Flutter mobile app\n• Arabic text and speech output',
+    imgs:['glove-1','glove-2','glove-3','glove-4'], code:'', demo:''
+  },
+  'egguide': {
+    title:'EgGuide', sub:'University team project',
+    body:"A virtual tourism website showcasing Egypt's cultural heritage.\n\n• 360° virtual tours with Matterport\n• Interactive maps of attractions\n• Online booking\n• Multi-language support",
+    imgs:['egguide-1','egguide-2','egguide-3','egguide-4'], code:'', demo:''
+  }
+};
+
+const certs = [
+  {issuer:'NVIDIA', title:'Building LLM Applications with Prompt Engineering', when:'Sep 2025', img:'cert-nvidia-llm'},
+  {issuer:'NVIDIA', title:'AI for All: From Basics to GenAI Practice', when:'Sep 2025', img:'cert-nvidia-genai'},
+  {issuer:'Huawei ICT Academy', title:'HCIA-AI V4.0', when:'Aug 2025', img:'cert-huawei-hcia'},
+  {issuer:'NTI and Huawei Talent Academy', title:'Artificial Intelligence track, 80 hours, 90% score', when:'Jul – Aug 2025', img:'cert-nti-ai'},
+  {issuer:'IBM SkillsBuild', title:'Machine Learning with Python', when:'Jul 2025', img:'cert-ibm-ml'},
+  {issuer:'ITI Mahara-Tech', title:'Applied Deep Learning', when:'Jun 2025', img:'cert-iti-dl'},
+  {issuer:'ITI Mahara-Tech', title:'Database Fundamentals', when:'Feb 2025', img:'cert-iti-db'},
+  {issuer:'Shabab Mobtakeron', title:'Intro to AI, ML and Quantum ML Fundamentals, 60 hours', when:'', img:'cert-shabab'},
+  {issuer:'Digital Egypt Pioneers (DEPI)', title:'Generative AI track', when:'', img:''}
+];
+/* ================================================ */
+
+/* certificates */
+const certWrap = document.getElementById('certs');
+certs.forEach(c=>{
+  const el = document.createElement(c.img ? 'button' : 'div');
+  el.className = 'cert' + (c.img ? '' : ' noimg');
+  if (c.img){ el.type = 'button'; el.setAttribute('aria-label', `View certificate: ${c.title}, ${c.issuer}`); }
+  el.innerHTML = `<div class="thumb">${c.img ? `<img src="img/${c.img}-sm.webp" alt="" loading="lazy">` : 'Certificate image coming soon'}</div><div class="info"><span class="issuer"></span><span class="title"></span><span class="when"></span></div>`;
+  el.querySelector('.issuer').textContent = c.issuer;
+  el.querySelector('.title').textContent = c.title;
+  el.querySelector('.when').textContent = c.when;
+  if (c.img) el.addEventListener('click',()=>openGallery({title:c.title, sub:c.issuer + (c.when ? ', ' + c.when : ''), imgs:[c.img]}));
+  certWrap.appendChild(el);
+});
+
+/* gallery */
+const gal = document.getElementById('gal'), gImg = document.getElementById('gal-img'), gBody = document.getElementById('gal-body');
+const gPrev = document.getElementById('gal-prev'), gNext = document.getElementById('gal-next'), gCount = document.getElementById('gal-count');
+let gList = [], gIdx = 0, gTitle = '';
+function showImg(){
+  gImg.src = `img/${gList[gIdx]}.webp`;
+  gImg.alt = `${gTitle}, image ${gIdx+1} of ${gList.length}`;
+  const many = gList.length > 1;
+  gPrev.hidden = gNext.hidden = gCount.hidden = !many;
+  gPrev.disabled = gIdx === 0; gNext.disabled = gIdx === gList.length - 1;
+  gCount.textContent = `${gIdx+1} / ${gList.length}`;
+}
+function openGallery(d){
+  gList = d.imgs; gIdx = 0; gTitle = d.title;
+  document.getElementById('gal-title').textContent = d.title;
+  document.getElementById('gal-sub').textContent = d.sub || '';
+  gBody.textContent = d.body || '';
+  if (d.code || d.demo){
+    const l = document.createElement('div'); l.className = 'links'; l.style.marginTop = '1.2rem';
+    const add = (href, text, cls) => { const a = document.createElement('a'); a.href = href; a.textContent = text; a.className = 'btn ' + cls; a.target = '_blank'; a.rel = 'noopener'; l.appendChild(a); };
+    if (d.demo) add(d.demo, 'Try the demo', 'btn-primary');
+    if (d.code) add(d.code, 'View code on GitHub', 'btn-ghost');
+    gBody.appendChild(l);
+  }
+  gBody.hidden = !gBody.childNodes.length;
+  showImg(); gal.showModal();
+}
+gPrev.onclick = ()=>{ if (gIdx > 0){ gIdx--; showImg(); } };
+gNext.onclick = ()=>{ if (gIdx < gList.length - 1){ gIdx++; showImg(); } };
+document.getElementById('gal-close').onclick = ()=>gal.close();
+gal.addEventListener('click', e=>{ if (e.target === gal) gal.close(); });
+gal.addEventListener('keydown', e=>{ if (e.key === 'ArrowRight') gNext.click(); if (e.key === 'ArrowLeft') gPrev.click(); });
+document.querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>openGallery(projects[b.dataset.project])));
+document.querySelectorAll('[data-open]').forEach(m=>m.addEventListener('click',()=>openGallery(projects[m.dataset.open])));
+
+/* nav */
+const nav = document.querySelector('.nav'), links = document.getElementById('nav-links'), menuBtn = document.getElementById('menu-btn');
+addEventListener('scroll', ()=>nav.classList.toggle('scrolled', scrollY > 8), {passive:true});
+menuBtn.onclick = ()=>{ const open = links.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', open); };
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{ links.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); }));
+const spy = new IntersectionObserver(es=>es.forEach(e=>{
+  if (e.isIntersecting) links.querySelectorAll('a').forEach(a=>a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+}), {rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section[id]').forEach(s=>spy.observe(s));
+
+/* the one orchestrated moment: calibration dots light up in order */
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const dots = [...document.querySelectorAll('.cal')], label = document.querySelector('.cal-label');
+if (reduce){ dots.forEach(d=>d.classList.add('on')); label.classList.add('on'); }
+else { dots.forEach((d,i)=>setTimeout(()=>d.classList.add('on'), 600 + i*280)); setTimeout(()=>label.classList.add('on'), 600 + dots.length*280 + 150); }
+
+/* quiet reveal */
+if (!reduce && 'IntersectionObserver' in window){
+  const io = new IntersectionObserver(es=>es.forEach(e=>{ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.rise').forEach(el=>io.observe(el));
+} else document.querySelectorAll('.rise').forEach(el=>el.classList.add('in'));
+</script>
+</body>
+</html>

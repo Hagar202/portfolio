@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" font-family="Inter,Segoe UI,Arial,sans-serif">
+<rect width="1200" height="620" fill="#0F151B"/>
+<text x="60" y="78" fill="#FFFFFF" font-size="34" font-weight="700">AI Cybercrime Evidence Builder</text>
+<text x="60" y="116" fill="#9AA4B2" font-size="20">Evidence in, verified Arabic legal complaint out (Law 175/2018)</text>
+<g font-size="19" text-anchor="middle">
+<g transform="translate(60,170)"><rect width="320" height="150" rx="16" fill="#1B2430" stroke="#2F3B4A"/><text x="160" y="40" fill="#8B93F8" font-size="15" font-weight="700">01</text><text x="160" y="78" fill="#FFFFFF" font-weight="700">Evidence upload</text><text x="160" y="108" fill="#9AA4B2" font-size="16">Screenshots, PDFs, text</text></g>
+<g transform="translate(440,170)"><rect width="320" height="150" rx="16" fill="#1B2430" stroke="#2F3B4A"/><text x="160" y="40" fill="#8B93F8" font-size="15" font-weight="700">02</text><text x="160" y="78" fill="#FFFFFF" font-weight="700">AI OCR + entities</text><text x="160" y="108" fill="#9AA4B2" font-size="16">Groq Vision, PaddleOCR</text></g>
+<g transform="translate(820,170)"><rect width="320" height="150" rx="16" fill="#2A2560" stroke="#8B93F8" stroke-width="2"/><text x="160" y="40" fill="#C7CAFF" font-size="15" font-weight="700">03</text><text x="160" y="78" fill="#FFFFFF" font-weight="700">Crime classification</text><text x="160" y="108" fill="#C7CAFF" font-size="16">11 crime types, LLM</text></g>
+<g transform="translate(820,400)"><rect width="320" height="150" rx="16" fill="#2A2560" stroke="#8B93F8" stroke-width="2"/><text x="160" y="40" fill="#C7CAFF" font-size="15" font-weight="700">04</text><text x="160" y="78" fill="#FFFFFF" font-weight="700">Law article mapping + RAG</text><text x="160" y="108" fill="#C7CAFF" font-size="16">BM25 + vector, ChromaDB</text></g>
+<g transform="translate(440,400)"><rect width="320" height="150" rx="16" fill="#1B2430" stroke="#2F3B4A"/><text x="160" y="40" fill="#8B93F8" font-size="15" font-weight="700">05</text><text x="160" y="78" fill="#FFFFFF" font-weight="700">Multi-agent verification</text><text x="160" y="108" fill="#9AA4B2" font-size="16">LangGraph Attacker + Judge</text></g>
+<g transform="translate(60,400)"><rect width="320" height="150" rx="16" fill="#2A2560" stroke="#8B93F8" stroke-width="2"/><text x="160" y="40" fill="#C7CAFF" font-size="15" font-weight="700">06</text><text x="160" y="78" fill="#FFFFFF" font-weight="700">Arabic PDF complaint</text><text x="160" y="108" fill="#C7CAFF" font-size="16">RTL report + evidence score</text></g>
+</g>
+<g stroke="#8B93F8" stroke-width="3" fill="none" stroke-linecap="round"><path d="M384 245h50M764 245h50M980 324v70M816 475h-50M436 475h-50"/></g>
+<g fill="#8B93F8"><path d="M434 237l12 8-12 8z"/><path d="M814 237l12 8-12 8z"/><path d="M972 392l8 12 8-12z"/><path d="M766 467l-12 8 12 8z"/><path d="M386 467l-12 8 12 8z"/></g>
+<text x="60" y="598" fill="#6B7686" font-size="15">Highlighted: the parts I owned</text>
+</svg>

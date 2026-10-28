@@ -387,7 +387,7 @@ dialog.gal::backdrop{background:rgba(10,12,25,.72);backdrop-filter:blur(4px)}
       <div class="body">
         <span class="tag">Graduation project</span>
         <h3>EyeSpeak</h3>
-        <div class="result"><b>87%</b><span>eye-tracking accuracy</span></div>
+        <div class="result"><b>R² 0.87</b><span>gaze prediction with Random Forest, 5-fold cross-validation</span></div>
         <p class="desc">Eye-tracking glasses that let people with limited mobility control an Android phone and type using only their gaze. A Raspberry Pi camera tracks the eye, a Random Forest model maps gaze to the screen after a short calibration, and the phone receives input over Bluetooth.</p>
         <ul>
           <li>Real-time gaze tracking with per-user calibration</li>
@@ -419,6 +419,23 @@ dialog.gal::backdrop{background:rgba(10,12,25,.72);backdrop-filter:blur(4px)}
           <div class="stack"><span>Qwen2.5-7B</span><span>LangChain</span><span>FAISS</span><span>FastAPI</span><span>JavaScript</span><span>pytest</span><span>Docker</span></div>
           <div class="links"><button type="button" class="more" data-project="nova">Screenshots and details</button><a class="code-link" href="https://github.com/Hagar202/nova-sales-assistant" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>Code</a></div>
         </div>
+      </div>
+    </article>
+
+    <article class="feature rise">
+      <div class="media" data-open="cybercrime" style="background:#0F151B"><img src="cybercrime.svg" alt="AI Cybercrime Evidence Builder pipeline: evidence upload, AI OCR, crime classification, law article mapping with RAG, multi-agent verification, Arabic PDF complaint" loading="lazy" width="1200" height="620"></div>
+      <div class="body">
+        <span class="tag">DEPI graduation project</span>
+        <h3>AI Cybercrime Evidence Builder</h3>
+        <div class="result"><b>TRL 7</b><span>deployed end to end in production, beyond the TRL 4 target</span></div>
+        <p class="desc">Helps victims of online crime in Egypt turn screenshots and files into a verified, legally grounded Arabic complaint. AI OCR reads the evidence, an LLM classifies the crime, hybrid RAG retrieves the matching articles of Law 175/2018, and LangGraph Attacker and Judge agents check every claim before the PDF is generated.</p>
+        <ul>
+          <li>My part: crime-type classification across 11 crime types, and mapping each crime to the right law articles</li>
+          <li>My part: the Arabic RTL complaint PDF template with an evidence strength score</li>
+          <li>Team of four; I also helped collect and structure the legal dataset</li>
+        </ul>
+        <div class="stack"><span>LangGraph</span><span>RAG</span><span>ChromaDB</span><span>Groq</span><span>Qwen2.5</span><span>FastAPI</span><span>React</span></div>
+        <div class="links"><button type="button" class="more" data-project="cybercrime">Details</button><a class="code-link" href="https://github.com/Hagar202/ai-CyberCrime" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>Code</a></div>
       </div>
     </article>
 
@@ -670,8 +687,13 @@ const projects = {
     body:'An AI sales assistant for a CRM. Before a call, the sales rep opens a lead and gets a brief: who they are, what they want, whether the budget is enough and what to do next. Follow-up questions keep their context.\n\n• RAG over a sales playbook PDF and 200 CRM leads, with LangChain and FAISS\n• Rule-based lead check in Python: budget, decision maker, Hot / Warm / Cold priority, at-risk leads\n• Conversation memory per user, plus summary memory for long chats\n• Fact guard: every price in an answer is checked against the playbook, and the model is asked again if one is wrong\n• Counting questions ("how many hot leads?") answered with pandas, never guessed; every answer shows its sources\n• Qwen2.5-7B-Instruct in 4-bit on a free Colab T4 GPU, or on a laptop with Ollama\n• FastAPI backend with REST API and live docs, JavaScript web app, 89 pytest tests with GitHub Actions, Docker',
     imgs:['nova-start.jpg','nova-demo.jpg','nova-followup.jpg','nova-card.jpg','nova-api.jpg'], code:'https://github.com/Hagar202/nova-sales-assistant', demo:''
   },
+  'cybercrime': {
+    title:'AI Cybercrime Evidence Builder', sub:'DEPI graduation project, team of four. Deployed end to end (TRL 7)',
+    body:'A legal-tech system that helps victims of online crime in Egypt build a verified, legally grounded complaint from their evidence.\n\n• AI OCR (Groq Vision, PaddleOCR fallback) and entity extraction from screenshots and PDFs\n• LLM crime classification across 11 crime types, with every claim tied to an evidence block (my part)\n• Rule-based mapping from each crime type to Law 175/2018 and Penal Code articles (my part)\n• Hybrid BM25 + vector RAG over Egyptian law in ChromaDB\n• LangGraph Attacker and Judge agents verify claims in up to 3 rounds\n• Arabic RTL complaint PDF with an evidence strength score (my part)\n• FastAPI backend, React frontend, Docker; deployed end to end',
+    imgs:['cybercrime.svg'], code:'https://github.com/Hagar202/ai-CyberCrime', demo:''
+  },
   'eyespeak': {
-    title:'EyeSpeak', sub:'Graduation project, team project. 87% eye-tracking accuracy',
+    title:'EyeSpeak', sub:'Graduation project, team of eight. Random Forest gaze model, R² 0.87',
     body:'Eye-tracking glasses that help people with disabilities control an Android phone using only their eye movements.\n\n• Real-time gaze tracking with per-user calibration\n• Random Forest model maps eye position to screen position\n• Virtual keyboard controlled by gaze\n• Raspberry Pi Zero 2 W camera, Kotlin Android app, Bluetooth link',
     imgs:['eyespeak1.jpeg','eyespeak2.jpeg','eyespeak3.jpeg','eyespeak4.jpeg'], code:'https://github.com/Hagar202/EyeSpeak', demo:''
   },
